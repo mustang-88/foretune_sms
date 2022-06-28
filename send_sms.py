@@ -13,15 +13,15 @@ fortune
 datalog
 # Find your Account SID and Auth Token at twilio.com/console
 # and set the environment variables. See http://twil.io/secure
-account_sid = "ACd7de5fb3e00fb7145b67a66d0d760279"
-auth_token = "7757cf6b23f3da9f53648f60920eaa02"
+account_sid = "AccountSID"
+auth_token = "AuthToken"
 client = Client(account_sid, auth_token)
 
 message = client.messages \
     .create(
          body= fortune,
-         from_='+15072487536',
-         to='+19173655936'
+         from_='+Your_Number',
+         to='+External_Cel'
      )
 
 #print(message.sid)
